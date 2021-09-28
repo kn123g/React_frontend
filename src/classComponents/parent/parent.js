@@ -22,7 +22,7 @@ class Parent extends React.Component{
     }
     render(){
         return <> <button onClick={this.buttonClick}>{this.state.btn}</button> 
-        <Child></Child> </>
+        <Child updateButton ={this.buttonClick} ></Child> </>
     }
 }
 

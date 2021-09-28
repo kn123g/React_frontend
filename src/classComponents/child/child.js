@@ -14,7 +14,8 @@ class Child extends React.Component{
         console.log('child update')
     }
     render(){
-        return <> <h1>Parent</h1></>
+        return <> <h1>Parent</h1>
+        <button onClick={this.props.updateButton}>Child button to update parent button</button></>
     }
 }
 
