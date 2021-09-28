@@ -12,7 +12,7 @@ import UserPlaces from './places/pages/UserPlaces';
 import MainNavigation from './shared/components/Navigation/MainNavigation';
 import { Provider } from 'react-redux';
 import store from './redux/store'
-
+import Parent from './classComponents/parent/parent';
 const App = () => {
   return (
     <Router>
@@ -31,6 +31,9 @@ const App = () => {
           </Route>
           <Route path="/store" exact>
             <Products />
+          </Route>
+          <Route path="/parentClassComponent" exact>
+            <Parent />
           </Route>
           <Redirect to="/" />
         </Switch>
